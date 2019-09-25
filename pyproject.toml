@@ -6,9 +6,17 @@ authors = ["huangkai"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-
+fastapi = {version = "=0.38.1", extras = ["all"]}
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
+
+[tool.black]
+skip-string-normalization = true
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+verify_ssl = true
 
 [build-system]
 requires = ["poetry>=0.12"]

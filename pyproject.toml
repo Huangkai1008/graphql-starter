@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "graphql-starter"
 version = "0.1.0"
-description = ""
+description = "Graphql-starter is a graphql start project with fastapi"
 authors = ["huangkai"]
 
 [tool.poetry.dependencies]

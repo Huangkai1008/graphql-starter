@@ -7,6 +7,9 @@ authors = ["huangkai"]
 [tool.poetry.dependencies]
 python = "^3.7"
 fastapi = {version = "=0.38.1", extras = ["all"]}
+tortoise_orm = "^0.13.8"
+python-dotenv = "^0.10.3"
+aiomysql = "^0.0.20"
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
 

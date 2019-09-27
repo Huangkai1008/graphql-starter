@@ -9,7 +9,7 @@ from graphql_starter.core.config import PROJECT_NAME
 from graphql_starter.schema.link import schema
 
 app = FastAPI(title=PROJECT_NAME)
-app.add_route("/graphql", GraphQLApp(schema=schema, executor=AsyncioExecutor()))
+app.add_route('/graphql', GraphQLApp(schema=schema, executor_class=AsyncioExecutor))
 
 
 @app.on_event('startup')

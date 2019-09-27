@@ -12,8 +12,9 @@ class LinkType(graphene.ObjectType):
 class Query(graphene.ObjectType):
     links = graphene.List(LinkType)
 
-    def resolve_links(self, info):
-        return Link.all()
+    async def resolve_links(self, info):
+        all_links = await Link.all()
+        return all_links
 
 
 schema = graphene.Schema(query=Query)
